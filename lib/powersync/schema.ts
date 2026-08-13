@@ -66,6 +66,18 @@ export const sales = new Table({
   updated_at: Column.text(),
 })
 
+export const customers = new Table({
+  id: Column.text({ primary: true }),
+  name: Column.text(),
+  company: Column.text(),
+  email: Column.text(),
+  phone: Column.text(),
+  address: Column.text(),
+  total_orders: Column.integer(),
+  created_at: Column.text(),
+  updated_at: Column.text(),
+})
+
 export const machines = new Table({
   id: Column.text({ primary: true }),
   machine_code: Column.text(),
@@ -120,6 +132,7 @@ export const AppSchema = {
   inventory,
   production,
   sales,
+  customers,
   machines,
   payroll,
   procurement,
