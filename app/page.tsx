@@ -10,7 +10,7 @@ const modules = [
   { id: 'hr', title: 'HR & Karyawan', icon: Icons.Users, color: 'from-blue-500 to-blue-600', path: '/dashboard/hr' },
   { id: 'payroll', title: 'Payroll', icon: Icons.Banknote, color: 'from-emerald-500 to-emerald-600', path: '/dashboard/payroll' },
   { id: 'finance', title: 'Keuangan', icon: Icons.Wallet, color: 'from-green-500 to-green-600', path: '/dashboard/finance' },
-  { id: 'accounting', title: 'Akuntansi', icon: Icons.BookOpen, color: 'from-teal-500 to-teal-600', path: '/dashboard/accounting' },
+  // { id: 'accounting', title: 'Akuntansi', icon: Icons.BookOpen, color: 'from-teal-500 to-teal-600', path: '/dashboard/accounting' },
   { id: 'inventory', title: 'Inventaris', icon: Icons.Package, color: 'from-amber-500 to-amber-600', path: '/dashboard/inventory' },
   { id: 'machines', title: 'Mesin', icon: Icons.Settings, color: 'from-slate-500 to-slate-600', path: '/dashboard/machines' },
   { id: 'sales', title: 'Penjualan', icon: Icons.ShoppingCart, color: 'from-purple-500 to-purple-600', path: '/dashboard/sales' },

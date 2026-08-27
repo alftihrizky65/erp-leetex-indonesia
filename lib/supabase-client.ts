@@ -13,7 +13,7 @@ export function getSupabaseClient(): SupabaseClient | null {
   }
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
 
   if (!supabaseUrl || !supabaseKey) {
     console.warn('Supabase environment variables not configured')
@@ -45,7 +45,7 @@ export function testConnection(): Promise<boolean> {
   if (!client) return Promise.resolve(false)
 
   // Simple connection test
-  return client.from('employees').select('id').limit(1)
+  return client.from('data_pegawai').select('id').limit(1)
     .then(() => true)
     .catch((error) => {
       console.error('Supabase connection test failed:', error.message)
